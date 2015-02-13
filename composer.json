@@ -1,0 +1,41 @@
+{
+    "name": "thumbtack/ttinjector",
+    "type": "library",
+    "description": "Construct anything using dependency injection",
+    "keywords": ["dependency-injection"],
+    "license": "MIT",
+
+    "version": "1.0.0",
+
+    "homepage": "https://github.com/thumbtack/ttinjector",
+    "support": {
+        "issues": "https://github.com/thumbtack/ttinjector/issues"
+    },
+
+    "require": {
+        "php": ">=5.4"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*"
+    },
+
+    "authors": [
+        {
+            "name": "Jeremy Mikkola",
+            "email": "jmikkola@thumbtack.com",
+            "role": "Developer"
+        }
+    ],
+
+    "autoload": {
+        "psr-4":  {"TT\\": "src/"}
+    },
+
+    "respositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/thumbtack/ttinjector"
+        }
+    ]
+}

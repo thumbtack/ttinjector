@@ -1,0 +1,8 @@
+tags
+TAGS
+*~
+*.swp
+.#
+.#*
+/vendor/
+*.lock
