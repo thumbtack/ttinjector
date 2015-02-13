@@ -1,4 +1,4 @@
-<phpunit backupGlobals="false">
+<phpunit backupGlobals="false" bootstrap="./vendor/autoload.php">
     <!-- Note that all paths are relative to the config file. -->
     <testsuites>
         <testsuite name="ttinjector">
