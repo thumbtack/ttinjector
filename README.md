@@ -1,5 +1,7 @@
 # Injector
 
+[![Build Status](https://travis-ci.org/thumbtack/ttinjector.svg?branch=master)](https://travis-ci.org/thumbtack/ttinjector)
+
 This is a simple dependency injector.
 
 It works in two stages. First, you register all the dependencies and describe how they relate to
