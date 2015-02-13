@@ -8,6 +8,12 @@ It works in two stages. First, you register all the dependencies and describe ho
 each other. Then, you build an injector out of those dependencies that can inject the values you
 have added.
 
+## Installation
+
+To install, use [composer](https://getcomposer.org/) and run:
+
+    composer require thumbtack/ttinjector
+
 ## How to use the injector:
 
 ### 1. Create a Dependencies object:
