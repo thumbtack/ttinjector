@@ -1,4 +1,4 @@
-# Injector
+# ttinjector
 
 [![Build Status](https://travis-ci.org/thumbtack/ttinjector.svg?branch=master)](https://travis-ci.org/thumbtack/ttinjector)
 
@@ -19,6 +19,8 @@ To install, use [composer](https://getcomposer.org/) and run:
 ### 1. Create a Dependencies object:
 
 ```php
+use TT\injector\Dependencies;
+
 $dependencies = new Dependencies();
 ```
 
