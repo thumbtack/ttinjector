@@ -9,7 +9,6 @@ class InjectorTest extends \PHPUnit_Framework_TestCase {
         return new injector\Factory($function, $dependencies);
     }
 
-    // Overrides the one provided by \ThumbtackUnitTestCase
     protected function injector($parent=null) {
         return new injector\Injector([
             'value1' => $this->factory(function() { return 1; }, []),
