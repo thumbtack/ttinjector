@@ -81,7 +81,7 @@ class Dependencies {
             throw new BadNameError('Bad value for a name: ' . var_export($name, true));
         }
         if ($name == self::INJECTOR_NAME) {
-            throw new BadNameError('The name "injector" is reserved');
+            throw new BadNameError('The name "' . self::INJECTOR_NAME . '" is reserved');
         }
         if (array_key_exists($name, $this->factories)) {
             throw new DuplicateNameError("Duplicate name: $name");
