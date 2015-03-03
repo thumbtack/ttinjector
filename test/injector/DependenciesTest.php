@@ -60,7 +60,7 @@ class DependenciesTest extends \PHPUnit_Framework_TestCase {
      */
     public function test_rejects_reserved_names() {
         $dependencies = new injector\Dependencies();
-        $dependencies->register_value('injector', 1);
+        $dependencies->register_value(injector\Dependencies::INJECTOR_NAME, 1);
     }
 
     public function test_creates_injector() {
