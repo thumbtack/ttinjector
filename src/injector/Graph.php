@@ -5,6 +5,9 @@ namespace TT\injector;
 class Graph {
     private $dependency_graph;
 
+    /**
+     * @param array $dependency_graph [string dependency name => [string dependency names]]
+     */
     public function __construct(array $dependency_graph) {
         $this->dependency_graph = $dependency_graph;
     }
