@@ -101,7 +101,7 @@ class Dependencies {
             );
         }
 
-        $cyclic_dependencies = $dependency_graph->list_dependency_cycle();
+        $cyclic_dependencies = $dependency_graph->list_dependency_cycles();
         if ($cyclic_dependencies) {
             throw new CircularDependencyError(
                 'Circular dependencies. Cannot resolve dependency tree for: '

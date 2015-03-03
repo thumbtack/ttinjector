@@ -32,7 +32,7 @@ class Graph {
      * @return string[] names of any dependencies involved in dependency cycle[s] (or that depend
      *     upon those in the cycle)
      */
-    public function list_dependency_cycle() {
+    public function list_dependency_cycles() {
         $dep_counts = $this->dependency_counts();
         $depends_on = $this->reverse_graph();
 

@@ -28,7 +28,7 @@ class GraphTest extends \PHPUnit_Framework_TestCase {
     }
 
     private function assert_finds_circular_dependencies($expected, $graph) {
-        $result = (new injector\Graph($graph))->list_dependency_cycle();
+        $result = (new injector\Graph($graph))->list_dependency_cycles();
         $this->assertEquals($expected, $result);
     }
 
