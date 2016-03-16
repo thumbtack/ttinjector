@@ -30,6 +30,19 @@ class DependenciesTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals(123, $injector->get_dependency('class based factory')->a);
     }
 
+    public function test_allows_requesting_injector() {
+        $dependencies = new injector\Dependencies();
+        $dependencies->register_value('my value', 123);
+        $dependencies->register_factory(
+            'my factory',
+            ['injector'],
+            function($inj) { return 2 * $inj->get_dependency('my value'); }
+        );
+
+        $injector = $dependencies->build_injector();
+        $this->assertEquals(246, $injector->get_dependency('my factory'));
+    }
+
     /**
      * @expectedException TT\injector\BadNameError
      */

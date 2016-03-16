@@ -126,6 +126,7 @@ class Dependencies {
                 }
             }
         }
+        $dependency_graph[self::INJECTOR_NAME] = [];
         return new Graph($dependency_graph);
     }
 }
