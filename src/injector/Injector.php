@@ -69,7 +69,7 @@ class Injector {
      *
      * @param mixed $callable function to be called or name of class to be constructed
      * @param string[] $dependencies an array of dependency names
-     * @return the result of calling the function.
+     * @return mixed The result of calling the function.
      */
     public function inject($callable, array $dependencies) {
         $args = [];
@@ -95,7 +95,8 @@ class Injector {
 
     /**
      * @param string $name Dependency name
-     * @return the value of a dependency.
+     * @return mixed The value of a dependency.
+     * @throws MissingDependencyError
      */
     public function get_dependency($name) {
         if ($this->local_has_dependency($name)) {
